@@ -1,0 +1,23 @@
+README
+======
+
+This is not ready for distribution. This is just a code dump for now.
+
+
+
+
+This lib offers two methods to retrieve the ISO 8601 week number and year from a timestamp and the other way around.
+
+This functionality is pretty straight forward in the middle of a year. Around the beginning and end of one,
+there are some special cases you need to catch. This is what it done for you.
+
+iso_8601_week_and_year_for_time(time)         => week, year
+time_from_iso_8601_week_and_year(week, year)  => time
+
+Explanation
+===========
+
+
+| Mon | Tue | Wed | Thu | Fri | Sat | Sun |
+|:----|----:|:---:|:---:|:---:|:---:|:---:|
+| 1   |   2 | 3   |  4  | 5   |   6 |   7 |
